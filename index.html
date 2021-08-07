@@ -7,34 +7,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="StyleSheet" type="text/css" href="Style/style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { position: absolute; bottom: 0px; font-size: 11px; right: 40%; left: 40%;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  
+  <div class="MainContainer">
+    <div class="Heading">
+      <h1>SPLT<br>TTER</h1>
+    </div>    
+    <div class="Calculator">
+      <div class="Input">
+        <div class="bill">
+          Bill<br>
+          <input type="text" class="inputText" id="txt_amount">
+        </div>
+        <div class="selectTip">
+          <p>Select Tip %</p>
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+        </div>
+      </div>
+      <div class="Output">
+        Tip Amount
+      </div>
+    </div>
+  </div>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
