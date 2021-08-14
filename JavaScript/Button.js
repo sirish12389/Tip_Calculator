@@ -6,7 +6,3 @@ function keep_button_active(id){
     if(button.id != "txt_cust_tip")
         button.className = "btn active";
 }
-
-function alert_hi(){
-    alert("Hi");
-}
