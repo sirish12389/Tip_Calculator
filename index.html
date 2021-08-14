@@ -13,13 +13,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <script src="JavaScript/Button.js"></script>
   <style>
     .attribution { position: absolute; bottom: 0px; font-size: 11px; right: 40%; left: 40%;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  
   <div class="MainContainer">
     <div class="Heading">
       <h1>SPLT<br>TTER</h1>
@@ -27,26 +28,42 @@
     <div class="Calculator">
       <div class="Input">
         <div class="bill">
-          Bill<br>
-          <input type="text" class="inputText" id="txt_amount">
+          <div>Bill</div>
+          <input type="text" class="inputText" id="txt_amount" placeholder="0">
         </div>
-        <div class="selectTip">
-          <p>Select Tip %</p>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-
+        <div class="buttonArr">
+          <div class="heading">Select Tip %</div> 
+          <div class="selectTip">
+            <button class="btn" id="btn1" onclick="keep_button_active(this.id);">5%</button>
+            <button class="btn" id="btn2" onclick="keep_button_active(this.id);">10%</button>
+            <button class="btn" id="btn3" onclick="keep_button_active(this.id);">15%</button>
+            <button class="btn" id="btn4" onclick="keep_button_active(this.id);">25%</button>
+            <button class="btn" id="btn5" onclick="keep_button_active(this.id);">50%</button>
+            <input type="text" class="inputText" id="txt_cust_tip" onclick="keep_button_active(this.id);" placeholder="Custom">
+          </div>
+        </div>
+        <div class="noPeople">
+          <div>Number of People</div>
+          <input type="text" class="inputText" id="txt_noPeople" placeholder="0">
         </div>
       </div>
       <div class="Output">
-        Tip Amount
+        <div class="outputContainer">
+          <div class="label">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="value">$0.0</div>
+        </div>
+        <div class="outputContainer">
+          <div class="label">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="value">$0.0</div>
       </div>
-    </div>
+      <button class="btn" id="btn6" onclick="alert_hi();">Reset</button>
   </div>
-  
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
