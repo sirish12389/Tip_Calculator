@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 80%;
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono";
+    font-weight: 700;
+    margin: 10% auto;
+}
+
+.MainContainer{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 70px;
+}
+
+.Heading{
+    text-align: center;
+}
+
+.Calculator{    
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Input{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 2.5em;
+}
+
+.Output{
+    display: grid;
+    grid-template-rows: 25% 55% 20%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.bill div{
+    margin-bottom: 10px;
+}
+
+.noPeople div{
+    margin-bottom: 10px;
+}
+
+.inputText{
+    width: 90%;
+    height: 45px;
+    border-radius: 8%;
+    padding: 0px 10px;
+    background-color: hsl(189, 41%, 97%);
+    background-image: url("../images/icon-dollar.svg");
+    background-position: 1em;
+    background-repeat: no-repeat;
+    border: none;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 20px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+#txt_noPeople{
+    background-image: url("../images/icon-person.svg");
+}
+
+#txt_cust_tip{
+    height: 50px;
+    background-image: none;
+    font-family: "Space Mono";
+    border: none;
+}
+
+.buttonArr{
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+}
+
+.selectTip{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 32% 32% 32%;
+    grid-auto-rows: 50px;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.btn{
+    margin: 0px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: "Space Mono";
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.selectTip .active{
+    background-color: hsl(172, 67%, 45%);
+}
+
+.outputContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 3em;
+    margin: 30px 10px 0px 10px;
+}
+.label h3{
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    color: hsl(189, 41%, 97%);
+    font-size: 15px;
+}
+.label p{
+    color: hsl(184, 14%, 56%);
+}
+.value{
+    color: hsl(172, 67%, 45%);
+    text-align: center;
+    font-size: 40px;
+}
+
+#btn6{
+    background-color: hsl(172, 67%, 45%);
+    width: 100%;
+}
